@@ -12,7 +12,8 @@ public class Service extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("resultado", "Coursera");
+        String palavra = req.getParameter("palavra");
+        req.setAttribute("resultado", Dictionary.traduzir(palavra));
         getServletContext().getRequestDispatcher("/view.jsp").forward(req, resp);
     }
 
