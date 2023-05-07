@@ -12,6 +12,7 @@
 <h1>Tradutor</h1>
 <div>Traduzido:</div>
 <div id="resultado"><%= request.getAttribute("resultado") %></div>
+<div><a href="index.jsp">Voltar</a></div>
 </body>
 
 </html>
