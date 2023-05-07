@@ -11,9 +11,7 @@
 <body>
 <h1>Tradutor</h1>
 <div>Traduzido:</div>
-<div>
-    <%= request.getAttribute("resultado") %>
-</div>
+<div id="resultado"><%= request.getAttribute("resultado") %></div>
 </body>
 
 </html>
