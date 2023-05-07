@@ -12,7 +12,6 @@ public class Dictionary {
         try (InputStream input = loader.getResourceAsStream("dictionary.properties")) {
             properties = new Properties();
             properties.load(input);
-            System.out.println("Size " + properties.size());
         } catch (Exception e) {
             e.printStackTrace();
         }
